@@ -155,7 +155,7 @@ async def cmd_doni(client: Client, message: Message):
         )
 
     # Memasukkan variabel ke dalam template dari file terpisah
-    caption_akhir = TEMPLATE_DONI.format(
+    caption_akhir = TEMPLATE_TESI.format(
         main_section=main_section,
         side_section=side_section
     )
