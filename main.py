@@ -153,11 +153,10 @@ async def cmd_doni(client: Client, message: Message):
 
     caption_template = (
         "```\n"
-        "ㅤ   ‌, ´´; __ , ´´;　‌‌ ‌ ‌ \n"
+        "ㅤ    ‌, ´´; __ , ´´;　‌‌ ‌ ‌ \n"
         "　‌ ;　𓂂 · ˔ · 𓂂 ‌ ‌ ;　‌\n"
-        "　‌ ´　っ♡ c ‌ ‌ ‌ 𝗦𝗨𝗚𝗔𝗥𝗪𝗛𝗘𝗘𝗣 𝗦𝗔𝗡𝗖𝗧𝗨𝗔𝗥𝗬 ☁️\n\n\n"
-ㅤㅤㅤᅠㅤㅤㅤᅠ 
-
+        "　‌ ´　っ♡ c ‌ ‌ ‌ 𝗦𝗨𝗚𝗔𝗥𝗪𝗛𝗘𝗘𝗣 𝗦𝗔𝗡𝗖𝗧𝗨𝗔𝗥𝗬 ☁️\n\n\"
+        "\n"
         "꒰ 🍰 ๋࣭⭑꒱  𝙖 𝙟𝙤𝙮𝙛𝙪𝙡 𝙧𝙚𝙘𝙞𝙥𝙚 𝙜𝙪𝙞𝙙𝙚𝙨 𝙩𝙝𝙚 𝙟𖦹𝙪𝙧𝙣𝙚𝙮...݁ ˖Ი𐑼⋆\n\n"
 
         "in a sanctuary where the world softens x3! ☆ ˖˟ \n"
