@@ -5,6 +5,9 @@ from pyrogram.types import Message
 from pyrogram.raw import functions
 from pyrogram.raw.types import InputPeerChannel, ReactionEmoji
 
+# Import template dari file terpisah
+from template import TEMPLATE_DONI
+
 API_ID = int(os.environ["API_ID"])
 API_HASH = os.environ["API_HASH"]
 SESSION_STRING = os.environ["SESSION_STRING"]
@@ -97,7 +100,7 @@ async def process_reaction_list(client: Client, message: Message):
     return pemberi_ma, pemberi_sa
 
 
-@app.on_message(filters.command("tes", prefixes=["/", "."]) & (filters.group | filters.me))
+@app.on_message(filters.command("done", prefixes=["/", "."]) & (filters.group | filters.me))
 async def cmd_done(client: Client, message: Message):
     if not message.reply_to_message:
         await message.reply_text("Rep ke pesan yg ingin dihitung reactnya")
@@ -123,7 +126,7 @@ async def cmd_done(client: Client, message: Message):
     await message.reply_text(text=teks_akhir)
 
 
-@app.on_message(filters.command("tesi", prefixes=["/", "."]) & (filters.group | filters.me))
+@app.on_message(filters.command("doni", prefixes=["/", "."]) & (filters.group | filters.me))
 async def cmd_doni(client: Client, message: Message):
     if not message.reply_to_message:
         await message.reply_text("Rep ke pesan yg ingin dihitung reactnya")
@@ -151,41 +154,15 @@ async def cmd_doni(client: Client, message: Message):
             f"{str_sa} ({len(pemberi_sa)})\n\n"
         )
 
-    caption_template = (
-        "```\n"
-        "ㅤ  ‌ ‌, ´´; __ , ´´;　‌‌ ‌ ‌ \n"
-        "　‌ ;　𓂂 · ˔ · 𓂂 ‌ ‌ ;　‌\n"
-        "　‌ ´　っ♡ c ‌ ‌ ‌ 𝗦𝗨𝗚𝗔𝗥𝗪𝗛𝗘𝗘𝗣 𝗦𝗔𝗡𝗖𝗧𝗨𝗔𝗥𝗬 ☁️\n"
-        "\n\n"
-        "꒰ 🍰 ๋࣭⭑꒱  𝙖 𝙟𝙤𝙮𝙛𝙪𝙡 𝙧𝙚𝙘𝙞𝙥𝙚 𝙜𝙪𝙞𝙙𝙚𝙨 𝙩𝙝𝙚 𝙟𖦹𝙪𝙧𝙣𝙚𝙮...݁ ˖Ი𐑼⋆\n\n"
-
-        "in a sanctuary where the world softens x3! ☆ ˖˟ \n"
-        "๑˚。🎀 a warm oven meets the coolness of \n"
-        "vanilla ice cream with chocolate🍦.* ♡\n\n"
-        f"{main_section}"
-        f"{side_section}"
-        "\n\n"
-        "໒ 𓈒° 🧁 time is savored like a slow melting\n"
-        "chocolate truffle, and every shared ⠾ (❥) \n"
-        "𔓐𑇓 .. experience becomes a decadent\n"
-        "cupcake indulgence. 🥣🥛♪ ྀི\n\n"
-        "🛋 ◛ ۫ ּ 𝗠𝗘𝗡𝗦𝗜𝗩𝗘𝗥𝗦𝗔𝗥𝗬 𝗗𝗔𝗧𝗘:\n"
-        "➴ .. https://t.me/wheepylove/12\n"
-        "```"
+    # Memasukkan variabel ke dalam template dari file terpisah
+    caption_akhir = TEMPLATE_DONI.format(
+        main_section=main_section,
+        side_section=side_section
     )
 
-    await message.reply_text(text=caption_template)
-
-
-async def main():
-    async with app:
-        print("Memperbarui database sesi ID chat...")
-        async for dialog in app.get_dialogs():
-            pass
-        print("Sesi siap digunakan!")
-        await asyncio.Event().wait()
+    await message.reply_text(text=caption_akhir)
 
 
 if __name__ == "__main__":
     print("Berhasil")
-    app.run(main())
+    app.run()
