@@ -6,7 +6,7 @@ from pyrogram.raw import functions
 from pyrogram.raw.types import InputPeerChannel, ReactionEmoji
 
 # Import template dari file terpisah
-from template import TEMPLATE_DONI
+from template import TEMPLATE_TESI
 
 API_ID = int(os.environ["API_ID"])
 API_HASH = os.environ["API_HASH"]
