@@ -153,15 +153,19 @@ async def cmd_doni(client: Client, message: Message):
 
     caption_template = (
         "```\n"
-        "   , ´´; __ , ´´; \n"
-        " ;  𓂂 · ˔ · 𓂂   ;\n"
-        " ´  っ♡ c    𝗦𝗨𝗚𝗔𝗥𝗪𝗛𝗘𝗘𝗣 𝗦𝗔𝗡𝗖𝗧𝗨𝗔𝗥𝗬 ☁️\n\n"
-        "꒰ 🍰 ๋࣭⭑꒱  𝙖 𝙟𝙤𝙮𝙛𝙪𝙡 𝙧𝙚𝙘𝙞𝙥𝙚 𝙜𝙪𝙞𝙙𝙚𝙨 𝙩𝙝𝙚 𝙟𖦹𝙪𝙧𝙣𝙚𝙮...݁ ˖Ი𐑼⋆\n\n"
+        "ㅤ   ‌, ´´; __ , ´´;　‌‌ ‌ ‌ \n"
+        "　‌ ;　𓂂 · ˔ · 𓂂 ‌ ‌ ;　‌\n"
+        "　‌ ´　っ♡ c ‌ ‌ ‌ 𝗦𝗨𝗚𝗔𝗥𝗪𝗛𝗘𝗘𝗣 𝗦𝗔𝗡𝗖𝗧𝗨𝗔𝗥𝗬 ☁️\n\n\n"
+ㅤㅤㅤᅠㅤㅤㅤᅠ 
+
+        "꒰ 🍰 ๋࣭⭑꒱  𝙖 𝙟𝙤𝙮𝙛𝙪𝙡 𝙧𝙚𝙘𝙞𝙥𝙚 𝙜𝙪𝙞𝙙𝙚𝙨 𝙩𝙝𝙚 𝙟𖦹𝙪𝙧𝙣𝙚𝙮...݁ ˖Ი𐑼⋆\n\n"
+
         "in a sanctuary where the world softens x3! ☆ ˖˟ \n"
         "๑˚。🎀 a warm oven meets the coolness of \n"
         "vanilla ice cream with chocolate🍦.* ♡\n\n"
         f"{main_section}"
         f"{side_section}"
+        "\n\n"
         "໒ 𓈒° 🧁 time is savored like a slow melting\n"
         "chocolate truffle, and every shared ⠾ (❥) \n"
         "𔓐𑇓 .. experience becomes a decadent\n"
