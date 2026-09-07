@@ -101,7 +101,7 @@ async def process_reaction_list(client: Client, message: Message):
 
 
 @app.on_message(filters.command("tes", prefixes=["/", "."]) & (filters.group | filters.me))
-async def cmd_done(client: Client, message: Message):
+async def cmd_tes(client: Client, message: Message):
     if not message.reply_to_message:
         await message.reply_text("Rep ke pesan yg ingin dihitung reactnya")
         return
@@ -127,7 +127,7 @@ async def cmd_done(client: Client, message: Message):
 
 
 @app.on_message(filters.command("tesi", prefixes=["/", "."]) & (filters.group | filters.me))
-async def cmd_doni(client: Client, message: Message):
+async def cmd_tesi(client: Client, message: Message):
     if not message.reply_to_message:
         await message.reply_text("Rep ke pesan yg ingin dihitung reactnya")
         return
