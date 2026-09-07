@@ -10,6 +10,8 @@ in a sanctuary where the world softens x3! ☆ ˖˟
 ๑˚。🎀 a warm oven meets the coolness of 
 vanilla ice cream with chocolate🍦.* ♡
 
+{main_section}{side_section}
+
 ໒ 𓈒° 🧁 t‌i‌m‌e‌ i‌s‌ s‌a‌v‌o‌r‌e‌d‌ l‌i‌k‌e‌ a‌ s‌l‌o‌w‌ m‌e‌l‌t‌i‌n‌g‌
 c‌h‌o‌c‌o‌l‌a‌t‌e‌ t‌r‌u‌f‌f‌l‌e‌, and every shared ⠾ (❥) 
 𔓐𑇓 .. experience becomes a decadent
